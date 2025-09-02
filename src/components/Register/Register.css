@@ -1,0 +1,90 @@
+.register{
+ width: 300px;
+ height: auto;
+ margin: auto;
+ border: 2px solid black;
+ border-radius: 8px;
+ box-shadow: 0px 0px 4px black,
+             0px 2px 8px black,
+             0px 4px 12px black;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+.form-header{
+    display: flex;
+    align-items: center;
+}
+
+.dot{
+    background: linear-gradient(to left,red,purple,green,blue);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 10px;
+    /* box-shadow: 0px 2px 4px white; */
+    position: relative;
+    animation: bounce 2s ease infinite;
+}
+.dot::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to left, red, purple, green, blue);
+    filter: blur(8px);
+    z-index: -1;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding: 10px;
+}
+
+.register-input{
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.register-input:hover{
+        background-color: black;
+    color: white;
+    transition: background-color 1s ease;
+}
+.register-input::placeholder{
+    font-weight: 100;
+    color:gray;
+}
+
+.register-submit{
+    text-align: center;
+}
+.register-submit:hover{
+    background-color:black;
+    color: white;
+    transition: background-color 1s ease;
+}
+form p{
+text-align: center;
+cursor: pointer;
+}
+form p:hover{
+    color: gray;
+}
+
+@keyframes bounce {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

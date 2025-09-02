@@ -1,0 +1,23 @@
+nav{ 
+ 
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    margin:30px;
+}
+
+
+.navigation-routes{
+    display: flex;
+    gap: 20px;
+}
+.navigation-routes p{
+    cursor: pointer;
+    color: white;
+}
+.navigation-routes p:hover{
+    transform: scale(1.05);
+    transition: 1s ease;
+    /* border-bottom: 1px solid white; */
+    color: gray;
+}
