@@ -24,7 +24,7 @@ class Register extends Component {
   };
 
   onSumbitRegister = () => {
-    fetch("https://blooming-harbor-62611-724d0ef32092.herokuapp.com/register", {
+    fetch("http://localhost:3000/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
